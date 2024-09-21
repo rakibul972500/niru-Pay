@@ -4,6 +4,14 @@ document.getElementById('btn-add-money').addEventListener('click', function(even
     event.preventDefault();
   //get add money input
   const addMoneyInput=document.getElementById('add-money-input').value ;
-  console.log(addMoneyInput);
+  const inputPin=document.getElementById('input-pin').value;
+  console.log(addMoneyInput,inputPin);
+
+  if(inputPin==='1234'){
+    //get current balance
+    const balance=document.getElementById('account-balance').innerText;
+    const newBalance= parseFloat(addMoneyInput) + parseFloat(balance) ;
+    console.log('new balance:',newBalance);
+  }
 
 })
