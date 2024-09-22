@@ -12,6 +12,9 @@ document.getElementById('btn-add-money').addEventListener('click', function(even
     const balance=document.getElementById('account-balance').innerText;
     const newBalance= parseFloat(addMoneyInput) + parseFloat(balance) ;
     console.log('new balance:',newBalance);
+
+    //uptate new balance 
+    document.getElementById('account-balance').innerText=newBalance;
   }
 
 })

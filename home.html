@@ -53,11 +53,33 @@
                     </div>
                   </form>
               </div>
+              <!-- cashout start here -->
+              <div class="hidden">
+                <form class="card-body">
+                    <div class="form-control">
+                      <label class="label">
+                        <span class="label-text">amount</span> 
+                      </label>
+                      <input id="cashout-money-input" type="text" placeholder="Enter Amount:" class="input input-bordered" required />           
+                    </div>
+                    <div class="form-control">
+                      <label class="label">
+                        <span class="label-text">Pin</span>
+                      </label>
+                      <input id="cashout-input-pin" type="password" placeholder="Pin" class="input input-bordered" required />
+                      
+                    </div>
+                    <div class="form-control mt-6">
+                      <button id="btn-cashout-money" class="btn btn-primary">Cash Out </button>
+                    </div>
+                  </form>
+              </div>
           </div>
         </div>
       </div>
       
     </main>
     <script src="./home.js"></script>
+    <script src="./cashout.js"></script>
 </body>
 </html>
